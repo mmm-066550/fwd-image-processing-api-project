@@ -4,7 +4,7 @@ import imagesRoute from './routes/images'
 import console from 'console'
 import express, { Application, Request, Response } from 'express'
 import StatusCodes from 'http-status-codes'
-import { checkIsPathExists } from './utils/fileSystemUtils'
+import { checkThumImagesDir } from './utils/fileSystemUtils'
 import path from 'path'
 
 // Set NodeJS Environment Variables
@@ -18,7 +18,7 @@ const NODE_ENV = 'development'
 app.use(morgan((process.env.NODE_ENV = NODE_ENV ? 'dev' : 'info')))
 
 // Express Server Routes
-app.get('/', (req: Request, res: Response): void => {
+app.get('/', (_: Request, res: Response): void => {
   res.status(StatusCodes.OK).json({
     message: 'Hello World 🌍'
   })
@@ -33,7 +33,7 @@ app.listen(PORT, async () => {
   // Check If Thumb Images Folder Is Exists Or Create It
   const BUILDED_IMAGES_DIR = process.env.BUILDED_IMAGES_DIR as string
   const thumbImagesDir = path.join(process.cwd(), BUILDED_IMAGES_DIR)
-  await checkIsPathExists(thumbImagesDir)
+  await checkThumImagesDir(thumbImagesDir)
 })
 
 export default app

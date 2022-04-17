@@ -1,5 +1,5 @@
 const isImageNameAndWidth = (fileName: string, width: number): boolean => {
-  if (fileName && width) return true
+  if (fileName && (width || width === 0)) return true
   else return false
 }
 

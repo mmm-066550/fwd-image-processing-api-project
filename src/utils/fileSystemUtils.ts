@@ -1,16 +1,7 @@
 import fs from 'fs-extra'
 
-export const checkIsPathExists = (filepath: string) =>
-  fs
-    .ensureDir(filepath)
-    .then((): void => {
-      return
-    })
-    .catch((): void => {
-      return
-    })
+export const checkThumImagesDir = (filepath: string) => fs.ensureDir(filepath)
 
-export const isFileExists = async (filepath: string) => {
-  const exists = await fs.pathExists(filepath)
-  return exists
+export const isFileExists = async (filepath: string): Promise<boolean> => {
+  return await fs.pathExists(filepath)
 }

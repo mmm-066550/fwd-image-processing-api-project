@@ -2,16 +2,17 @@
   "name": "fwd-image-processing-api-project",
   "version": "1.0.0",
   "description": "fwd-image-processing-api-project",
-  "main": "",
+  "main": "build/index.js",
   "scripts": {
-    "test": "tsc && jasmine",
     "dev": "nodemon ./src/index.ts",
-    "clean": "rimraf build/",
+    "test": "tsc && jasmine",
     "build": "npm run clean && tsc",
     "start": "npm run build && nodemon build/index.js",
-    "format:build": "prettier --write 'build/*.{ts,tsx,js,jsx}'",
-    "format:src": "prettier --write 'src/*.{ts,tsx,js,jsx}'",
-    "lint": "eslint . --ext .ts"
+    "format:src": "prettier --write src/**/*.ts",
+    "eslint": "eslint . --ext .ts",
+    "clean": "rimraf ./build",
+    "clean:thumbs": "rimraf ./assets/images/build",
+    "jasmine": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -40,6 +41,7 @@
     "@types/jasmine": "^3.10.2",
     "@types/morgan": "^1.9.3",
     "@types/node": "^16.11.12",
+    "@types/sharp": "^0.30.2",
     "@types/supertest": "^2.0.11",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "@typescript-eslint/parser": "^5.19.0",
