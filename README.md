@@ -92,3 +92,6 @@ Method: GET</p>
 </tr>
 </tbody>
 </table>
+
+<p class="has-line-data" data-line-start="18" data-line-end="20">Example:<br>
+<code>/api/images/fjord&amp;width=200&amp;height=300</code></p>
