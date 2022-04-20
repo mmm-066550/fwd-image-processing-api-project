@@ -95,3 +95,15 @@ Method: GET</p>
 
 <p class="has-line-data" data-line-start="18" data-line-end="20">Example:<br>
 <code>/api/images/fjord&amp;width=200&amp;height=300</code></p>
+
+### npm-run Scripts
+
+'dev': 'nodemon ./src/index.ts',
+"test": "tsc && jasmine",
+"build": "npm run clean && tsc",
+"start": "npm run build && nodemon build/index.js",
+"format:src": "prettier --write src/**/*.ts",
+"eslint": "eslint . --ext .ts",
+"clean": "rimraf ./build",
+"clean:thumbs": "rimraf ./assets/images/build",
+"jasmine": "jasmine"
