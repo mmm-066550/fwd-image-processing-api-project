@@ -45,4 +45,24 @@ Some Description of the folders:
     |           
     +---tests         
   ```
-  
+# Initialize The project
+
+## start the server
+
+1. Install all dependencies
+   `npm i`
+
+2. Build the project from TypeScript to JavaScript
+   `npm run build`
+
+3. Start the Server
+   `npm start`
+
+### The server will start on port: the user environment port, or the default host is on: http://localhost:3000.
+
+4. Run the Tests
+   `npm run test`
+
+5. Run Prettier and ESLint
+   `npm run prettier`
+   `npm run lint`
