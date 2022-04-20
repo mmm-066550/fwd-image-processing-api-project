@@ -96,7 +96,7 @@ Method: GET</p>
 <p class="has-line-data" data-line-start="18" data-line-end="20">Example:<br>
 <code>/api/images/fjord&amp;width=200&amp;height=300</code></p>
 
-### npm-run Scripts
+### NPM-run Scripts
 
 - `dev`: `nodemon ./src/index.t`
 - `test`: `tsc && jasmine`
