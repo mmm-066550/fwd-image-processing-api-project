@@ -98,12 +98,12 @@ Method: GET</p>
 
 ### npm-run Scripts
 
-`dev`: `nodemon ./src/index.t`
-`test`: `tsc && jasmine`
-`build`: `npm run clean && tsc`
-`start`: `npm run build && nodemon build/index.js`
-`format:src`: `prettier --write src/**/*.ts`
-`eslint`: `eslint . --ext .ts`
-`clean`: `rimraf ./build`
-`clean:thumbs`: `rimraf ./assets/images/build`
-`jasmine`: `jasmine`
+- `dev`: `nodemon ./src/index.t`
+- `test`: `tsc && jasmine`
+- `build`: `npm run clean && tsc`
+- `start`: `npm run build && nodemon build/index.js`
+- `format:src`: `prettier --write src/**/*.ts`
+- `eslint`: `eslint . --ext .ts`
+- `clean`: `rimraf ./build`
+- `clean:thumbs`: `rimraf ./assets/images/build`
+- `jasmine`: `jasmine`
