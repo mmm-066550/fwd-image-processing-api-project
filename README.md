@@ -21,3 +21,28 @@ A simple API builded to manage the user to resize the images based on URL parame
 
 1. [Jasmine] (https://jasmine.github.io/)
 2. [supertest] (https://www.npmjs.com/package/supertest)
+
+### Project Structure and Project Tree
+
+Some Description of the folders:
+- `assets`: Images to be processed by the API
+- `spec`: Jasmine Configuration
+- `controllers`: API Handlers
+- `routes`: API Routers
+
+```
++---assets
+|   \---images
+|       \---src
++---spec
+|   \---support    
+\---src
+    |   index.ts
+    |
+    +---controllers    
+    +---routes
+    |   \---images
+    |           
+    +---tests         
+  ```
+  
