@@ -68,7 +68,7 @@ Some Description of the folders:
    `npm run lint`
 
 <h2 class="code-line" data-line-start=9 data-line-end=10 ><a id="USAGE_9"></a>USAGE</h2>
-<p class="has-line-data" data-line-start="10" data-line-end="12">PATH: <code>/api/images</code><br>
+<p class="has-line-data" data-line-start="10" data-line-end="12">PATH: <code>/api/images/:imageName</code><br>
 Method: GET</p>
 <table class="table table-striped table-bordered">
 <thead>
@@ -79,16 +79,16 @@ Method: GET</p>
 </thead>
 <tbody>
 <tr>
-<td>filename</td>
-<td>Yes</td>
-</tr>
-<tr>
 <td>width</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td>height</td>
 <td>No (default height = width)</td>
+</tr>
+<tr>
+<td>ext</td>
+<td>No (default jpg)</td>
 </tr>
 </tbody>
 </table>
